@@ -1,9 +1,10 @@
 # My_Debian_Experience
+```
 dpkg: warning: 'ldconfig' not found in PATH or not executable
 dpkg: warning: 'start-stop-daemon' not found in PATH or not executable
 dpkg: error: 2 expected programs not found in PATH or not executable
 Note: root's PATH should usually contain /usr/local/sbin, /usr/sbin and /sbin
-
+```
 che tipo di errore si tratta?
 
 
