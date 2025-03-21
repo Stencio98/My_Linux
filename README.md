@@ -44,6 +44,12 @@ Se dopo aver provato queste soluzioni continui ad avere problemi, potrebbe esser
 sudo apt install samba
 ```
 
+* creare cartella condivisa:
+```
+mkdir -p ~/shared_folder
+chmod 777 ~/shared_folder
+```
+
 * per modificare la configurazione di samba:
 ```
 sudo nano /etc/samba/smb.conf
@@ -51,25 +57,19 @@ sudo nano /etc/samba/smb.conf
 
 * aggiungere condivisione cartella "shared_folder":
 ```
-[shared_folder]
-path = /home/your_user/shared_folder
-browsable = yes
-writable = yes
-guest ok = yes
-read only = no
-```
 
-* aggiungere utente per samba:
-```
-sudo chown -R your_user:your_user /home/your_user/shared_folder
-sudo chmod -R 0777 /home/your_user/shared_folder
-sudo smbpasswd -a your_user
+[shared_folder]
+##
+  comment = samba linux
+  path = /home/user/shared_folder
+  read only = no
+  browsable = yes
+
 ```
 
 * riavvio servizio samba:
 ```
-sudo systemctl restart smbd
-sudo systemctl restart nmbd
+sudo service smbd restart
 ```
 * configuratzione firewall (se lo abbiamo attivo):
 ```
