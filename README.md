@@ -61,7 +61,7 @@ sudo nano /etc/samba/smb.conf
 [shared_folder]
 ##
   comment = samba linux
-  path = /home/user/shared_folder
+  path = /home/user_name/shared_folder
   read only = no
   browsable = yes
 
@@ -82,14 +82,3 @@ sudo ufw allow samba
 ```
 sudo smbpasswd -a user_name
 ```
-
-# Link folders (in particoilare un link mi porta a un altro disco)
-* creare il symlink in una directory specifica, specificando il percorso completo del symlink:
-```
-ln -s /media/user/259682c1-3a76-4d54-a471-8accf79e05a7/ /directory/where/make/hyperlink
-```
-ora si può usare:
-```
-cd 259682c1-3a76-4d54-a471-8accf79e05a7
-```
-dalla cartella in cui abbiamo creato il link
