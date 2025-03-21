@@ -1,4 +1,4 @@
-# My_Debian_Experience
+# My_Linux_Experience
 **dpkg error**
 ```
 dpkg: warning: 'ldconfig' not found in PATH or not executable
