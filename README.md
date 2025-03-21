@@ -120,7 +120,7 @@ sudo mount -a
 ```
 df -h
 ```
-* se vogliamo che `samba` punti al nuovo punto di montaggio:
+* se vogliamo che `samba` punti al nuovo punto di montaggio (se samba non è ancora collegato al disco):
 ```
 [Dati]
   path = /mnt/dati
