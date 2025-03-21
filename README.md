@@ -76,4 +76,5 @@ sudo systemctl restart nmbd
 sudo ufw allow samba
 ```
 
+* accesso alla condivisione della rete: su Windows possiamo digitare l'indirizzo IP del computer Linux nella barra degli indirizzi di Esplora file
 
