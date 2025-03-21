@@ -40,7 +40,9 @@ Se dopo aver provato queste soluzioni continui ad avere problemi, potrebbe esser
 
 # SAMBA
 * installare samba:
-```sudo apt install samba```
+```
+sudo apt install samba
+```
 
 * per modificare la configurazione di samba:
 ```
