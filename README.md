@@ -82,3 +82,4 @@ sudo ufw allow samba
 ```
 sudo smbpasswd -a user_name
 ```
+**in teoria questo funziona per avviarlo automaticamente all'avvio:**
