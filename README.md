@@ -120,7 +120,7 @@ sudo mount -a
 ```
 df -h
 ```
-* se vogliamo che `samba` punti al nuovo punto di montaggio (se samba non è ancora collegato al disco):
+* se vogliamo che `samba` punti al nuovo punto di montaggio (se samba non è ancora collegato al disco oppure il punto di montaggio è diventato diverso dal precedente e quindi samba "non trova" la vecchia cartella condivisa):
 ```
 [Dati]
   path = /mnt/dati
