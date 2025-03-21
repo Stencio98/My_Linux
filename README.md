@@ -102,7 +102,7 @@ sudo systemctl start nmbd
 ```
 sudo nano /etc/fstab
 ```
-aggiungendo la riga:
+che contiene le informazioni necessarie al montaggio delle periferiche di memorizzazione del sistema, aggiungiamo quindi la riga:
 ```
 UUID=YYYY-YYYY /mnt/dati ext4 defaults 0 2
 ```
