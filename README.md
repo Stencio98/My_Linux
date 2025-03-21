@@ -39,3 +39,39 @@ Se vengono restituiti i percorsi corretti, dovresti poter utilizzare dpkg senza 
 Se dopo aver provato queste soluzioni continui ad avere problemi, potrebbe essere necessario riesaminare l'installazione del sistema o ripristinare i pacchetti mancanti.
 
 # SAMBA
+* installare samba:
+```sudo apt install samba```
+
+* per modificare la configurazione di samba:
+```
+sudo nano /etc/samba/smb.conf
+```
+
+* aggiungere condivisione cartella "shared_folder":
+```
+[shared_folder]
+path = /home/tuo_utente/shared_folder
+browsable = yes
+writable = yes
+guest ok = yes
+read only = no
+```
+
+* aggiungere utente per samba:
+```
+sudo chown -R tuo_utente:tuo_utente /home/tuo_utente/shared_folder
+sudo chmod -R 0777 /home/tuo_utente/shared_folder
+sudo smbpasswd -a tuo_utente
+```
+
+* riavvio servizio samba:
+```
+sudo systemctl restart smbd
+sudo systemctl restart nmbd
+```
+* configuratzione firewall (se lo abbiamo attivo):
+```
+sudo ufw allow samba
+```
+
+
