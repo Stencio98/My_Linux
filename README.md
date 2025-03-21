@@ -52,7 +52,7 @@ sudo nano /etc/samba/smb.conf
 * aggiungere condivisione cartella "shared_folder":
 ```
 [shared_folder]
-path = /home/tuo_utente/shared_folder
+path = /home/your_user/shared_folder
 browsable = yes
 writable = yes
 guest ok = yes
@@ -61,9 +61,9 @@ read only = no
 
 * aggiungere utente per samba:
 ```
-sudo chown -R tuo_utente:tuo_utente /home/tuo_utente/shared_folder
-sudo chmod -R 0777 /home/tuo_utente/shared_folder
-sudo smbpasswd -a tuo_utente
+sudo chown -R your_user:your_user /home/your_user/shared_folder
+sudo chmod -R 0777 /home/your_user/shared_folder
+sudo smbpasswd -a your_user
 ```
 
 * riavvio servizio samba:
