@@ -1,5 +1,5 @@
 # My_Linux_Experience
-**dpkg error**
+**dpkg error (DEBIAN)** 
 ```
 dpkg: warning: 'ldconfig' not found in PATH or not executable
 dpkg: warning: 'start-stop-daemon' not found in PATH or not executable
