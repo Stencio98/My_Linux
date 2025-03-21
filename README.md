@@ -82,7 +82,7 @@ sudo ufw allow samba
 ```
 sudo smbpasswd -a user_name
 ```
-**in teoria questo funziona per avviarlo automaticamente all'avvio:**.
+* per essere sicuri parta all'avvio:
 ```
 sudo systemctl enable smbd
 sudo systemctl enable nmbd
@@ -91,5 +91,3 @@ sudo systemctl enable nmbd
 sudo systemctl start smbd
 sudo systemctl start nmbd
 ```
-
-in teoria dopo il riavvio dovrebbe partire
