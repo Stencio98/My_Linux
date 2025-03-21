@@ -116,7 +116,7 @@ sudo mkdir -p /mnt/dati
 ```
 sudo mount -a
 ```
-* usiamo per df per vedere se il disco è montato correttamente:
+* usiamo per `df` per vedere se il disco è montato correttamente:
 ```
 df -h
 ```
