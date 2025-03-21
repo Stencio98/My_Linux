@@ -78,6 +78,11 @@ sudo ufw allow samba
 
 * accesso alla condivisione della rete: su Windows possiamo digitare l'indirizzo IP del computer Linux nella barra degli indirizzi di Esplora file
 
+* se non ci si riesce ad accedere, farlo con user e password:
+```
+sudo smbpasswd -a user_name
+```
+
 # Link folders (in particoilare un link mi porta a un altro disco)
 * creare il symlink in una directory specifica, specificando il percorso completo del symlink:
 ```
