@@ -93,4 +93,54 @@ sudo systemctl start nmbd
 ```
 # Montare secondo disco (che non ha so, rotazionale) all'avvio in automatico:
 * usiamo il seguente comando per identificare i diski e i loro UUID
-``` sudo blkid ```
+```
+:$ sudo blkid
+/dev/sda1: UUID="XXXX-XXXX" TYPE="ext4"
+/dev/sdb1: UUID="YYYY-YYYY" TYPE="ext4"
+```
+* andiamo a modificare il file:
+```
+sudo nano /etc/fstab
+```
+aggiungendo la riga:
+```
+UUID=YYYY-YYYY /mnt/dati ext4 defaults 0 2
+```
+al fondo del file, sostituendo UUID con l'UUID del disco, /mnt/dati con il punto di montaggio desiderato (crea prima la directory se non esiste), e ext4 con il tipo di file system del disco, se necessario, Se non siamo sicuro del tipo di file system, possiamo usare `auto` come opzione.g
+
+* creiamo il punto di montaggio:
+```
+sudo mkdir -p /mnt/dati
+```
+* testiamo il montaggio con il seguente comando che prova a montare tutti i file system definiti in `/etc/fstab`. Se non ci sono errori, il disco verrà montato correttamente:
+```
+sudo mount -a
+```
+* usiamo per df per vedere se il disco è montato correttamente:
+```
+df -h
+```
+* se vogliamo che `samba` punti al nuovo punto di montaggio:
+```
+[Dati]
+  path = /mnt/dati
+  available = yes
+  valid users = tuo_utente
+  read only = no
+  browsable = yes
+  public = yes
+  writable = yes
+```
+* nel caso, riavviamo `samba`:
+```
+sudo systemctl restart smbd
+```
+
+
+
+
+
+
+
+
+
