@@ -78,3 +78,8 @@ sudo ufw allow samba
 
 * accesso alla condivisione della rete: su Windows possiamo digitare l'indirizzo IP del computer Linux nella barra degli indirizzi di Esplora file
 
+# Link folders (in particoilare un link mi porta a un altro disco)
+* creare il symlink in una directory specifica, specificando il percorso completo del symlink:
+```
+ln -s /media/stencio/259682c1-3a76-4d54-a471-8accf79e05a7/nome_del_file /percorso/dove/vuoi/creare/link_min
+```
