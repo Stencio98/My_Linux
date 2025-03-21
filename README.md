@@ -1,4 +1,4 @@
-#dpkg error Debian 
+# dpkg error Debian 
 ```
 dpkg: warning: 'ldconfig' not found in PATH or not executable
 dpkg: warning: 'start-stop-daemon' not found in PATH or not executable
@@ -38,4 +38,4 @@ which start-stop-daemon
 Se vengono restituiti i percorsi corretti, dovresti poter utilizzare dpkg senza ulteriori problemi.
 Se dopo aver provato queste soluzioni continui ad avere problemi, potrebbe essere necessario riesaminare l'installazione del sistema o ripristinare i pacchetti mancanti.
 
-#SAMBA
+# SAMBA
