@@ -59,7 +59,7 @@ sudo nano /etc/samba/smb.conf
 ```
 
 [shared_folder]
-##
+## lasciamo due spazi dal margine sinistro
   comment = samba linux
   path = /home/user_name/shared_folder
   read only = no
