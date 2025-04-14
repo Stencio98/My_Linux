@@ -91,7 +91,7 @@ sudo systemctl enable nmbd
 sudo systemctl start smbd
 sudo systemctl start nmbd
 ```
-# Montare secondo disco (che non ha so, rotazionale) all'avvio in automatico:
+# Montare secondo disco (che non ha SO, rotazionale) all'avvio in automatico:
 * usiamo il seguente comando per identificare i diski e i loro UUID
 ```
 :$ sudo blkid
