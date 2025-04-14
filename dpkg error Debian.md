@@ -38,8 +38,6 @@ which start-stop-daemon
 Se vengono restituiti i percorsi corretti, dovresti poter utilizzare dpkg senza ulteriori problemi.
 Se dopo aver provato queste soluzioni continui ad avere problemi, potrebbe essere necessario riesaminare l'installazione del sistema o ripristinare i pacchetti mancanti.
 
-# Accedere dall'esterno alla rete locale con Wireguard (morrolinux):
-* vedi video su you tube
 
 
 
