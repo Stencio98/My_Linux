@@ -12,7 +12,11 @@ ip addr
 ```
 sudo ufw allow ssh
 ```
-* per collegarci:
+* per collegarci da una shell su _a_:
 ```
 ssh b_username@b_ip_address
+#poi la shell cambierà "nome" e sarete dentro a _b_
 ```
+* per copiare un file da _a_ ad _b_ e viceversa, apriamo una nuova shell su _a_ e usiamo scp:
+  * `scp /percorso/file.txt b_username@b_ip_address:/home/b_username/destinazione/ # a --to--> b` 
+  * `scp b_username@b_ip_address:/home/b_username/file_da_copiare.txt . b --to--> a`
