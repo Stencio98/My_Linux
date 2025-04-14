@@ -1,4 +1,4 @@
-# ssh
+# ssh (guida rete locale)
 __a == client; b == server__
 * bisogna installare il servizio ssh su __b__ (meglio su entrambe le macchine):
 ```
@@ -20,3 +20,5 @@ ssh b_username@b_ip_address
 * per copiare un file da __a__ ad __b__ e viceversa, apriamo una nuova shell su __a__ e usiamo scp:
   * `scp /percorso/file.txt b_username@b_ip_address:/home/b_username/destinazione/ #a --to--> b` 
   * `scp b_username@b_ip_address:/home/b_username/file_da_copiare.txt . #b --to--> a`
+
+# ssh (guida rete internet) 
