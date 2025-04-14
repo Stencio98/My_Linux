@@ -1,5 +1,5 @@
 # ssh
-__a --> client; b --> server__
+__a == client; b == server__
 * bisogna installare il servizio ssh su __b__ (meglio su entrambe le macchine):
 ```
 sudo apt install openssh-server
