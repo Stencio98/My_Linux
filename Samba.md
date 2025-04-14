@@ -1,4 +1,3 @@
-
 # Samba
 * installare samba:
 ```
@@ -52,7 +51,7 @@ sudo systemctl enable nmbd
 sudo systemctl start smbd
 sudo systemctl start nmbd
 ```
-# Montare secondo disco (che non ha SO, rotazionale) all'avvio in automatico:
+__Montare secondo disco (che non ha SO, rotazionale) all'avvio in automatico__
 * usiamo il seguente comando per identificare i diski e i loro UUID
 ```
 :$ sudo blkid
@@ -96,3 +95,5 @@ df -h
 ```
 sudo systemctl restart smbd
 ```
+__virtual box__
+* se abbiamo linux su disco e abbiamo una macchina virtuale con linux installato, e vogliamo che veda in rete le cartelle condivise (per esempio samba condivisa dal linux che gira su disco) dobbiamo attivare in virtual box il bridge adapter nella sezione network, la modalità di rete "Bridge" è spesso la scelta migliore in questo caso, permettendo alla VM di apparire come un dispositivo indipendente sulla tua rete locale.
