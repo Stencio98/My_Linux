@@ -141,7 +141,7 @@ which start-stop-daemon
 * Se vengono restituiti i percorsi corretti, dovresti poter utilizzare dpkg senza ulteriori problemi.
 Se dopo aver provato queste soluzioni continui ad avere problemi, potrebbe essere necessario riesaminare l'installazione del sistema o ripristinare i pacchetti mancanti.
 
-# ssh (guida rete locale)
+# ssh (guida rete locale) (guida senza chiavi ssh)
 __a == client; b == server__
 * bisogna installare il servizio ssh su __b__ (meglio su entrambe le macchine):
 ```
@@ -164,7 +164,8 @@ ssh b_username@b_ip_address
   * `scp /percorso/file.txt b_username@b_ip_address:/home/b_username/destinazione/ #a --to--> b` 
   * `scp b_username@b_ip_address:/home/b_username/file_da_copiare.txt . #b --to--> a`
 
-# ssh (guida rete internet) 
+# ssh (guida rete internet) (appoggiandoci a Tailscale) (guida senza chiavi ssh)
+
 
 
 
