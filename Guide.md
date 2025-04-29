@@ -168,7 +168,13 @@ ssh b_username@b_ip_address
   * `scp b_username@b_ip_address:/home/b_username/file_da_copiare.txt . #b --to--> a`
 
 # ssh (guida rete internet) (appoggiandoci a Tailscale) (guida senza chiavi ssh)
+...
 
+# Cambiare ambiente grafico comodamente su debian
+* è sufficiente sfruttare il comando
+```
+tasksel
+```
 
 
 
