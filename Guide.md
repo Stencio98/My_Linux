@@ -1,4 +1,4 @@
-# Che tipo di architettura ho?
+# CHE TIPO DI ARCHITETTURA HO?
 ```
 uname -m
 # oppure anche il comando (più chiaro) 
@@ -9,7 +9,7 @@ dpkg --print-architecture
 * armv7 --> 32 bit per CPU ARM
 * aarch64 --> 64 bit per CPU ARM
 
-# Samba
+# SAMBA
 * installare samba:
 ```
 sudo apt install samba
@@ -62,7 +62,7 @@ sudo systemctl enable nmbd
 sudo systemctl start smbd
 sudo systemctl start nmbd
 ```
-# Montare secondo disco (che non ha SO, rotazionale) all'avvio in automatico
+# MONTARE SECONDO DISCO (HDD CHE USO COME ARCHIVIO) ALL'AVVIO IN AUTOMATICO
 * usiamo il seguente comando per identificare i diski e i loro UUID
 ```
 :$ sudo blkid
@@ -167,7 +167,7 @@ which start-stop-daemon
 * Se vengono restituiti i percorsi corretti, dovresti poter utilizzare dpkg senza ulteriori problemi.
 Se dopo aver provato queste soluzioni continui ad avere problemi, potrebbe essere necessario riesaminare l'installazione del sistema o ripristinare i pacchetti mancanti.
 
-# ssh (guida rete locale) (guida senza chiavi ssh)
+# SSH GUIDA RETE LOCALE
 __a == client; b == server__
 * bisogna installare il servizio ssh su __b__ (meglio su entrambe le macchine):
 ```
@@ -190,10 +190,10 @@ ssh b_username@b_ip_address
   * `scp /percorso/file.txt b_username@b_ip_address:/home/b_username/destinazione/ #a --to--> b` 
   * `scp b_username@b_ip_address:/home/b_username/file_da_copiare.txt . #b --to--> a`
 
-# ssh (guida rete internet) (appoggiandoci a Tailscale) (guida senza chiavi ssh)
+# SSH (GUIDA RETE INTERNET) (TAILSCALE) (NO CHIAVI)
 ...
 
-# Cambiare ambiente grafico comodamente su debian
+# CAMBIARE AMBIENTE GRAFICO SU DEBIAN
 * è sufficiente sfruttare il seguente comando per installare altri ambienti disponibili:
 ```
 tasksel
