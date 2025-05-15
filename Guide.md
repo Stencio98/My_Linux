@@ -131,7 +131,7 @@ I programmi in questione potrebbero non essere installati o potrebbero esserci p
 
 * Soluzione:
 Assicurati che il tuo PATH contenga le directory corrette. Puoi farlo eseguendo i seguenti comandi come root:
-`export PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin`
+```export PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin```
 Puoi anche aggiungere questa riga al file del profilo di root (/root/.bashrc o /root/.profile) per rendere permanente la modifica.
 
 * Verifica:
