@@ -171,9 +171,14 @@ ssh b_username@b_ip_address
 ...
 
 # Cambiare ambiente grafico comodamente su debian
-* è sufficiente sfruttare il comando
+* è sufficiente sfruttare il seguente comando per installare altri ambienti disponibili:
 ```
 tasksel
+```
+* invece per disinstallarli (in questo esempio kde plasma):
+```
+apt-get --purge remove task-kde-desktop
+apt autoremove kde*
 ```
 
 
