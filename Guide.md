@@ -106,10 +106,31 @@ df -h
 ```
 sudo systemctl restart smbd
 ```
-# virtual box
+# VIRTUAL BOX
 * se abbiamo linux su disco e abbiamo una macchina virtuale con linux installato, e vogliamo che veda in rete le cartelle condivise (per esempio samba condivisa dal linux che gira su disco) dobbiamo attivare in virtual box il bridge adapter nella sezione network, la modalità di rete "Bridge" è spesso la scelta migliore in questo caso, permettendo alla VM di apparire come un dispositivo indipendente sulla tua rete locale.
 
-# dpkg error Debian 
+# VIRTUAL BOX DEBIAN ERROR
+```
+There were problems setting up VirtualBox.  To re-start the set-up process, run
+  /sbin/vboxconfig
+as root.  If your system is using EFI Secure Boot you may need to sign the
+kernel modules (vboxdrv, vboxnetflt, vboxnetadp, vboxpci) before you can load
+them. Please see your Linux system's documentation for more information.
+Processing triggers for libc-bin (2.36-9+deb12u10) ...
+Processing triggers for gnome-menus (3.36.0-1.1) ...
+Processing triggers for desktop-file-utils (0.26-1) ...
+Processing triggers for mailcap (3.70+nmu1) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for shared-mime-info (2.2-1) ...
+
+```
+* si risolve con:
+```
+sudo apt install linux-headers-$(uname -r)
+sudo /sbin/vboxconfig
+```
+
+# DPKG ERROR DEBIAN 
 ```
 dpkg: warning: 'ldconfig' not found in PATH or not executable
 dpkg: warning: 'start-stop-daemon' not found in PATH or not executable
