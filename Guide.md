@@ -204,6 +204,8 @@ apt-get --purge remove task-kde-desktop
 apt autoremove kde*
 ```
 
+# AGGIUNGERE FLATPAK REPOSITORY
+https://flatpak.org/setup/Debian
 
 
 
