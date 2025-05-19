@@ -207,6 +207,19 @@ apt autoremove kde*
 # AGGIUNGERE FLATPAK REPOSITORY
 https://flatpak.org/setup/Debian
 
+# EMOJII TERMINALE
+*  distribuzioni moderne di solito hanno il supporto per UTF-8 abilitato di default. Se non è abilitato:
+```
+export LANG=en_US.UTF-8
+# test
+echo -e "\U1F60A"
+```
+* Non tutti i terminali o font possono supportare tutte le emoji. Se non vedi correttamente le emoji, potrebbe essere necessario installare un font che le supporti:
+```
+sudo apt install fonts-noto-color-emoji
+```
+
+
 
 
 
