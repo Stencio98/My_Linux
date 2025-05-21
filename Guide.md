@@ -221,7 +221,10 @@ sudo apt install fonts-noto-color-emoji
 * per un test più bello vedi script `emoji.sh`
 
 # MICROSOFT TEAMS (snap) WORK BETTER WITH Xorg 
-
+* che server grafico sto usando??
+```
+ps -e | grep -E "X|wayland"
+```
 
 
 
