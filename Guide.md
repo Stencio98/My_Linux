@@ -225,9 +225,22 @@ sudo apt install fonts-noto-color-emoji
 ```
 ps -e | grep -E "X|wayland"
 ```
+# ERROR WHILE LOADING SHARED LIBRARIES
+```
+udevadn: error while loading shared libraries: liblzma.so.5: cannot open shared object file: No such file or directory
 
+```
+* si verifica quando, all’avvio del sistema (nelle primissime fasi del boot, gestite dall'initramfs), viene richiesto di caricare una libreria condivisa (liblzma.so.5) che però non è presente.
+* il problema sembra risolversi con:
+```
+sudo update-initramfs -u -k 6.1.0-37-amd64
+# ovviamente con il la versione del kernel che da problemi
+```
+* il sistema rigenera l'immagine initramfs aggiornandone il contenuto con le librerie e i moduli attuali presenti nel filesystem (tra cui anche liblzma.so.5 aggiornata o ripristinata) così al prossimo boot l’initramfs avrà dentro la versione corretta della libreria o saprà dove cercarla.
 
-
-
-
+* Solitamente capita quando aggiorni i pacchetti di sistema manualmente (es. apt install --reinstall liblzma5) modifichi a mano le librerie in `/lib` o `/usr/lib` fai rollback di pacchetti senza aggiornare initramfs o dopo un recovery da live USB in cui ripristini manualmente librerie senza rigenerare initramfs.
+* nel caso succeda spesso usare:
+```
+sudo update-initramfs -c -k all
+```
 
