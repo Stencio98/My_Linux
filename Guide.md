@@ -1,3 +1,4 @@
+## le guide possono differire con fedora per esempio, quindi controllare i comandi analoghi (dnf <--> apt)
 # CHE TIPO DI ARCHITETTURA HO?
 ```
 uname -m
@@ -204,7 +205,7 @@ apt-get --purge remove task-kde-desktop
 apt autoremove kde*
 ```
 
-# AGGIUNGERE FLATPAK REPOSITORY
+# AGGIUNGERE FLATPAK REPOSITORY (for Debian)
 https://flatpak.org/setup/Debian
 
 # EMOJII TERMINALE
@@ -220,12 +221,14 @@ sudo apt install fonts-noto-color-emoji
 ```
 * per un test più bello vedi script `emoji.sh`
 
-# MICROSOFT TEAMS (snap / flatpak) WORK BETTER WITH Xorg 
+# MICROSOFT TEAMS (snap / flatpak) XORG WAYLAND (Debian 12)
+* su debian 12 (gnome) usando wayland non era possibile condividere lo schermo, mentre con Xorg il problema spariva
 * che server grafico sto usando??
 ```
 ps -e | grep -E "X|wayland"
 ```
-# ERROR WHILE LOADING SHARED LIBRARIES
+* invece su Fedora, non ostante usi wayland non sembra dare problemi di alcun tipo
+# ERROR WHILE LOADING SHARED LIBRARIES (Debian 12)
 ```
 udevadn: error while loading shared libraries: liblzma.so.5: cannot open shared object file: No such file or directory
 ```
