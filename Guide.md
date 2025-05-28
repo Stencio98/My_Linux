@@ -245,3 +245,14 @@ sudo update-initramfs -u -k 6.1.0-37-amd64
 sudo update-initramfs -c -k all
 ```
 
+# Che pacchetti installati ho? (Fedora)
+* è sufficiente digitare uno dei due comandi:
+```
+# mostra in ordine cronologico i pacchetti
+rpm -qa
+```
+```
+# usando dnf, elenca alfabeticamente i pacchetti
+dnf list --installed
+```
+
