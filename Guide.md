@@ -255,4 +255,6 @@ rpm -qa
 # usando dnf, elenca alfabeticamente i pacchetti
 dnf list --installed
 ```
+# come funzionano gli script bash?
+* https://docs.rockylinux.org/it/books/learning_bash/03-data-entry-and-manipulations/
 
