@@ -1,4 +1,10 @@
 ## le guide possono differire con fedora per esempio, quindi controllare i comandi analoghi (dnf <--> apt)
+# MOSTRA I DISPOSITIVI PCI, INCLUSE LE GPU:
+```
+lspci | grep -i vga
+```
+* Se compare sia la Intel UHD che una NVIDIA, il sistema vede entrambe le GPU — quindi potenzialmente è in modalità ibrida.
+
 # CHE TIPO DI ARCHITETTURA HO?
 ```
 uname -m
