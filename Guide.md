@@ -137,6 +137,24 @@ sudo apt install linux-headers-$(uname -r)
 sudo /sbin/vboxconfig
 ```
 
+# VIRTUALBOX DEBIAN ERROR (installando il .deb)
+```
+dpkg: error processing package virtualbox-7.1 (--install):
+ dependency problems - leaving unconfigured
+Processing triggers for libc-bin (2.41-12) ...
+Processing triggers for mailcap (3.74) ...
+Processing triggers for gnome-menus (3.36.0-3) ...
+Processing triggers for desktop-file-utils (0.28-1) ...
+Processing triggers for hicolor-icon-theme (0.18-2) ...
+Processing triggers for shared-mime-info (2.4-5+b2) ...
+Errors were encountered while processing:
+ virtualbox-7.1
+```
+* quando usiamo `dpkg -i` non vengono risolte le dipendenze mancanti, quindi:
+```
+sudo apt --fix-broken install
+```
+
 # DPKG ERROR DEBIAN 
 ```
 dpkg: warning: 'ldconfig' not found in PATH or not executable
