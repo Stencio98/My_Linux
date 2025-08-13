@@ -1,3 +1,4 @@
+# this script update debian (only apt packages)
 #!/bin/sh
 echo "=============================================================================="
 echo "\033[1msudo apt update\033[0m"
