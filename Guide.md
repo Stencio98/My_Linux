@@ -138,6 +138,7 @@ sudo /sbin/vboxconfig
 ```
 
 # VIRTUALBOX DEBIAN ERROR (installando il .deb)
+### non funziona
 ```
 dpkg: error processing package virtualbox-7.1 (--install):
  dependency problems - leaving unconfigured
