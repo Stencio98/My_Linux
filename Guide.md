@@ -252,6 +252,11 @@ sudo apt install fonts-noto-color-emoji
 ```
 ps -e | grep -E "X|wayland"
 ```
+oppure
+```
+echo $XDG_SESSION_TYPE
+```
+
 * invece su Fedora, non ostante usi wayland non sembra dare problemi di alcun tipo
 # ERROR WHILE LOADING SHARED LIBRARIES (Debian 12)
 ```
