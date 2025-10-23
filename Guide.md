@@ -69,6 +69,10 @@ sudo systemctl enable nmbd
 sudo systemctl start smbd
 sudo systemctl start nmbd
 ```
+* per vedere lo stato di samba
+```
+sudo service smbd status
+```
 # MONTARE SECONDO DISCO (HDD CHE USO COME ARCHIVIO) ALL'AVVIO IN AUTOMATICO
 * usiamo il seguente comando per identificare i diski e i loro UUID
 ```
