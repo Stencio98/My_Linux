@@ -197,6 +197,32 @@ which start-stop-daemon
 * Se vengono restituiti i percorsi corretti, dovresti poter utilizzare dpkg senza ulteriori problemi.
 Se dopo aver provato queste soluzioni continui ad avere problemi, potrebbe essere necessario riesaminare l'installazione del sistema o ripristinare i pacchetti mancanti.
 
+# STEAM ERROR DEBIAN
+```
+root@debian:/home/stencio_m/Downloads# dpkg -i steam_latest.deb 
+(Reading database ... 131699 files and directories currently installed.)
+Preparing to unpack steam_latest.deb ...
+Unpacking steam-launcher (1:1.0.0.85) over (1:1.0.0.85) ...
+dpkg: dependency problems prevent configuration of steam-launcher:
+ steam-launcher depends on curl; however:
+  Package curl is not installed.
+
+dpkg: error processing package steam-launcher (--install):
+ dependency problems - leaving unconfigured
+Processing triggers for mailcap (3.74) ...
+Processing triggers for gnome-menus (3.36.0-3) ...
+Processing triggers for desktop-file-utils (0.28-1) ...
+Processing triggers for hicolor-icon-theme (0.18-2) ...
+Processing triggers for man-db (2.13.1-1) ...
+Errors were encountered while processing:
+ steam-launcher
+```
+soluzione che sembra funzionare:
+```
+sudo apt update
+sudo apt --fix-broken install
+sudo dpkg --configure -a
+```
 # SSH GUIDA RETE LOCALE
 __a == client; b == server__
 * bisogna installare il servizio ssh su __b__ (meglio su entrambe le macchine):
