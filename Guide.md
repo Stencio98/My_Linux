@@ -321,3 +321,6 @@ dnf list --installed
 * https://www.aquilante.net/bash/cap5_funzioni.shtml
 * https://guide.debianizzati.org/index.php/Bash_scripting_-_variabili_-_stringhe
 
+# AGGIORNARE UBUNTU TERMINALE
+* https://www.bartolomeoalberico.it/aggiornare-ubuntu-da-terminale/
+* aggiungerei al fondo anche `sudo snap refresh`
