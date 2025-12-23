@@ -324,3 +324,13 @@ dnf list --installed
 # AGGIORNARE UBUNTU TERMINALE
 * https://www.bartolomeoalberico.it/aggiornare-ubuntu-da-terminale/
 * metterei tutto in uno script sh e aggiungerei al fondo anche `sudo snap refresh` 
+```
+# eseguire con: sh update.sh
+sudo snap refresh
+sudo apt update
+sudo apt upgrade
+sudo apt full-upgrade
+sudo apt autoremove
+sudo apt clean
+sudo do-release-upgrade
+```
