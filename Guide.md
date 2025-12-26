@@ -334,3 +334,5 @@ sudo apt autoremove
 sudo apt clean
 sudo do-release-upgrade
 ```
+# DA SPERIMENTARE SU LINUX MINT
+https://forums.linuxmint.com/viewtopic.php?p=2724077&hilit=game+lag+game+steam#p2724077
