@@ -121,6 +121,12 @@ sudo systemctl restart smbd
 # VIRTUAL BOX
 * se abbiamo linux su disco e abbiamo una macchina virtuale con linux installato, e vogliamo che veda in rete le cartelle condivise (per esempio samba condivisa dal linux che gira su disco) dobbiamo attivare in virtual box il bridge adapter nella sezione network, la modalità di rete "Bridge" è spesso la scelta migliore in questo caso, permettendo alla VM di apparire come un dispositivo indipendente sulla tua rete locale.
 
+* mi è capitato di avere un errore tale per cui due risorse litigano
+```
+lsmod | grep kvm #se escono due risultati disattivane uno:
+sudo modprobe -r kvm_intel kvm
+```
+
 # VIRTUAL BOX DEBIAN ERROR
 ```
 There were problems setting up VirtualBox.  To re-start the set-up process, run
