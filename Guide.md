@@ -342,3 +342,23 @@ sudo do-release-upgrade
 ```
 # DA SPERIMENTARE SU LINUX MINT (lag gaming)
 https://forums.linuxmint.com/viewtopic.php?p=2724077&hilit=game+lag+game+steam#p2724077
+
+# DISABILITARE TASTIERA PORTATILE 
+```
+Usa xinput per identificare e disabilitare la tastiera interna.
+
+1) Elenca i dispositivi e trova l'id della tastiera:
+   - xinput list
+
+2) Disabilita la tastiera (sostituisci ID con il numero trovato):
+   - xinput --disable ID
+
+3) Per riabilitarla:
+   - xinput --enable ID
+
+Note rapide:
+- Se la tastiera è gestita come "AT Translated Set 2 keyboard" o simile, usa quell'ID.
+- Per renderlo persistente all'avvio, aggiungi il comando in uno script di avvio (es. ~/.profile o systemd user unit).
+- Per evitare di rimanere senza input, prova prima con un terminale virtuale (Ctrl+Alt+F2) o assicurati di avere accesso remoto (SSH).
+```
+* nel mio caso ho usato il comando `xinput disable 17` (17 era AT Translated ... )
