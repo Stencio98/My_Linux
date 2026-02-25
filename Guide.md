@@ -3,7 +3,18 @@
 ```
 lspci | grep -i vga
 ```
+oppure
+```
+lspci | grep -E "VGA|3D"
+```
 * Se compare sia la Intel UHD che una NVIDIA, il sistema vede entrambe le GPU — quindi potenzialmente è in modalità ibrida.
+```
+glxinfo | grep "OpenGL renderer"     #fa vedere quale gpu sta renderizzando
+```
+* un altro modo per ottenere informazioni:
+```
+inxi -G     # mostra gpu, driver usati e quale è attiva
+```
 
 # CHE TIPO DI ARCHITETTURA HO?
 ```
