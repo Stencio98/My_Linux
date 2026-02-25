@@ -354,6 +354,7 @@ sudo do-release-upgrade
 # DA SPERIMENTARE SU LINUX MINT (lag gaming)
 https://forums.linuxmint.com/viewtopic.php?p=2724077&hilit=game+lag+game+steam#p2724077
 * funziona, è bastato disabilitare il secure boot (thx microsoft)
+* domanda forse stupida... anche con il driver nouveau?
 
 # DISABILITARE TASTIERA PORTATILE 
 ```
