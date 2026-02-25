@@ -39,6 +39,7 @@ dpkg --print-architecture
 * i686 --> arch. a 32 bit per CPU intel/AMD
 * armv7 --> 32 bit per CPU ARM
 * aarch64 --> 64 bit per CPU ARM
+```
 # DRIVER NVIDIA DEBIAN
 * wiki.debian.org/NvidiaGraphicsDrivers#Debian_13_.22Trixie.22
 # SAMBA
