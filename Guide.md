@@ -26,10 +26,12 @@ options nouveau modeset=0
 
 sudo update-initramfs -u                                  # aggiorna initframs
 reboot                                                    # riavvia il sistema
+```
 
 # CHE TIPO DI ARCHITETTURA HO?
 ```
 uname -m
+```
 # oppure anche il comando (più chiaro) 
 dpkg --print-architecture 
 ```
