@@ -16,6 +16,17 @@ glxinfo | grep "OpenGL renderer"     #fa vedere quale gpu sta renderizzando
 inxi -G     # mostra gpu, driver usati e quale è attiva
 ```
 
+# DISATTIVAZIONE DRIVER NOUVEAU
+* per qualche motivo, potresti voler disabilitare il driver nouveau
+```
+sudo nano /etc/modprobe.d/blacklist-nouveau.conf          # crea il file
+                                                          # inserisci le seguenti due righe nel file
+blacklist nouveau
+options nouveau modeset=0
+
+sudo update-initramfs -u                                  # aggiorna initframs
+reboot                                                    # riavvia il sistema
+
 # CHE TIPO DI ARCHITETTURA HO?
 ```
 uname -m
