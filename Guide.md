@@ -1,4 +1,18 @@
-## le guide possono differire con fedora per esempio, quindi controllare i comandi analoghi (dnf <--> apt)
+##### le guide possono differire con fedora per esempio, quindi controllare i comandi analoghi (dnf <--> apt)
+# FORZARE LA VISUALIZZAZIONE DI GRUB
+```
+sudo nano /etc/default/grub
+```
+* cerca le seguenti righe e modificale come vedi qui:
+```
+GRUB_TIMEOUT_STYLE=menu
+GRUB_TIMEOUT=5
+```
+* se trovi la riga `GRUB_HIDDEN_TIMEOUT=0` commentala con `#`
+* salviamo e aggiorniamo GRUB:
+```
+sudo update-grub          # su fedora cambia il comando
+```
 # MOSTRA I DISPOSITIVI PCI, INCLUSE LE GPU:
 ```
 lspci | grep -i vga
