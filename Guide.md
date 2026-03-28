@@ -383,10 +383,9 @@ sudo do-release-upgrade
 https://forums.linuxmint.com/viewtopic.php?p=2724077&hilit=game+lag+game+steam#p2724077
 * funziona, è bastato disabilitare il secure boot (thx microsoft)
 * domanda forse stupida... anche con il driver nouveau?
-* 
-===============================
-DISABILITARE TASTIERA PORTATILE
-=============================== 
+
+# DISABILITARE TASTIERA PORTATILE
+
 * Usa xinput per identificare e disabilitare la tastiera interna.
 
 * Elenca i dispositivi e trova l'id della tastiera:
